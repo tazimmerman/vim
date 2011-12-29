@@ -48,7 +48,7 @@ set antialias
 set scrolloff=5
 set listchars=tab:\|\ ,extends:>,precedes:<
 set tags=./tags;/.
-set runtimepath+=~/vim/vcs,~/vim/wiki,~/vim/ctrlp
+set runtimepath+=~/vim/vcs,~/vim/ctrlp
 set cursorline       " Highlight current line
 
 let java_comment_strings=1
@@ -70,6 +70,7 @@ let g:AutoCloseProtectedRegions=["Comment", "String", "Character"]
 let g:ctrlp_clear_cache_on_exit=0
 let g:ctrlp_dotfiles=0
 let g:ctrlp_jump_to_buffer=1
+let g:ctrlp_map='<silent> <leader>p'
 let g:ctrlp_max_height=20
 let g:ctrlp_use_caching=1
 let g:ctrlp_working_path_mode=0
@@ -137,8 +138,6 @@ function EatChar(p)
 	return (c =~ a:p) ? '' : c
 endfunction
 
-iabbrev pdb import pdb; pdb.set_trace()<C-R>=EatChar('\s')<CR><ESC>
-
 if has("gui_running")
 	set showtabline=1 " Display tabs (if they exist)
 	set guioptions=ae " Own visual selections
@@ -167,4 +166,17 @@ else
 endif
 
 command! CtrlPTagz call ctrlp#init(ctrlp#tagz#id())
-nnoremap <leader>tt :CtrlPTagz<CR>
+nnoremap <silent> <leader>t :CtrlPTagz<CR>
+nnoremap <silent> <leadeR>u :CtrlPMRU<CR>
+nnoremap <silent> <leadeR>b :CtrlPBuffer<CR>
+
+function! TryExcept() range
+	" Insert try one line above selection.
+	exec "normal Otry:\<Esc>"
+	" Indent the last visual selection.
+	exec "normal gv>\<Esc>"
+	" Insert except one line below selection.
+	exec "normal `>oexcept:\<CR>import pdb; pdb.set_trace()\<Esc>"
+endfunction
+
+vmap <silent> <leader>pdb :call TryExcept()<CR>
