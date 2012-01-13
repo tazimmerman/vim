@@ -179,4 +179,4 @@ function! TryExcept() range
 	exec "normal `>oexcept:\<CR>import pdb; pdb.set_trace()\<Esc>"
 endfunction
 
-vmap <silent> <leader>pdb :call TryExcept()<CR>
+vmap <silent> <F7> :call TryExcept()<CR>
