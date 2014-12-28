@@ -1,0 +1,27 @@
+snippet main "main program stub"
+#include <cstdio>
+#include <cstdlib>
+
+int main(int argc, char *argv[])
+{
+	$0
+	return EXIT_SUCCESS;
+}
+endsnippet
+
+snippet guards "include guards"
+#ifndef $1_HPP
+#define $1_HPP
+
+$0
+
+#endif // $1_HPP
+endsnippet
+
+snippet cout
+std::cout << $1 << std::endl;
+endsnippet
+
+snippet sptr
+boost::shared_ptr<$1> $0
+endsnippet

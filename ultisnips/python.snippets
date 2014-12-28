@@ -1,0 +1,60 @@
+#
+# Task snippets
+#
+snippet taskmain "run a task from the command line" b
+if __name__ == '__main__':
+	${1:task}.runCmdline(sys.argv)
+endsnippet
+
+#
+# Debug snippets
+#
+snippet pdb "import pdb and set a breakpoint" b
+import pdb; pdb.set_trace()
+endsnippet
+
+snippet bp "set a pdb breakpoint" b
+pdb.set_trace()
+endsnippet
+
+snippet pdbte "wrap selection in try/except and set a pdb breakpoint"
+try:
+	${VISUAL}
+except:
+	import pdb; pdb.set_trace()
+endsnippet
+
+#
+# Numpy shorcuts
+#
+snippet where "numpy.where()"
+numpy.where(${1:cond}, ${2:true-cond}, ${3:false-cond})
+endsnippet
+
+snippet logand "numpy.logical_and()"
+numpy.logical_and(${1:a}, ${2:b})
+endsnippet
+
+snippet logor "numpy.logical_or()"
+numpy.logical_or(${1:a}, ${2:b})
+endsnippet
+
+snippet lognot "numpy.logical_not()"
+numpy.logical_not(${1:cond})
+endsnippet
+
+snippet in1d "numpy.in1d()"
+numpy.in1d(${1:column}, [${2:values}])
+endsnippet
+
+snippet isnan "numpy.isnan()"
+numpy.isnan(${1:x})
+endsnippet
+
+#
+# Fstrat
+#
+snippet exprdef "symbolic expression definition"
+@symbolic.expressionDef(units=${1:units}, description=${2:description})
+endsnippet
+
