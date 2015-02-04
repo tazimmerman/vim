@@ -37,7 +37,7 @@ set updatetime=2000
 set antialias
 set scrolloff=5
 set listchars=tab:\|\ ,extends:>,precedes:<
-set tags=./.tags,.tags,../.tags,../../.tags
+set tags=./tags;
 set runtimepath+=~/.vim/bundle/Vundle.vim,~/.local/share/vim
 
 " Disable Git SSL verification
@@ -64,6 +64,7 @@ Plugin 'Keithbsmiley/investigate.vim'
 Plugin 'tpope/vim-abolish'
 Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-surround'
+Plugin 'terryma/vim-multiple-cursors'
 call vundle#end()
 " End Vundle plugin management
 
@@ -83,14 +84,13 @@ let g:netrw_list_hide=".*.swp;*.o"
 
 let g:xml_syntax_folding=1
 
-let g:ctrlp_map='<leader><Space>'
 let g:ctrlp_clear_cache_on_exit=1
 let g:ctrlp_show_hidden=0
 let g:ctrlp_switch_buffer=1
 let g:ctrlp_match_window='max:10,results:100'
 let g:ctrlp_use_caching=1
-let g:ctrlp_root_markers=['cscope.out', '.tags']
-let g:ctrlp_extensions=['tag', 'buffertag']
+let g:ctrlp_root_markers=['cscope.out', 'tags']
+let g:ctrlp_extensions=['buffertag']
 let g:ctrlp_buftag_ctags_bin='/home/tzimmerm/tp/vim/7.4/bin/ctags'
 let g:ctrlp_by_filename=1
 
@@ -155,8 +155,8 @@ nmap <silent> <leader>sc :SyntasticCheck<CR>
 nmap <silent> <leader>sr :SyntasticReset<CR>
 
 " Wrap a word in quotes
-nnoremap <silent> <leader>q' ciw'<C-R><C-O>"'<Esc>
-nnoremap <silent> <leader>q" ciw'<C-R><C-O>"'<Esc>
+nmap <silent> <leader>q' ciw'<C-R><C-O>"'<Esc>
+nmap <silent> <leader>q" ciw'<C-R><C-O>"'<Esc>
 
 if has("cscope")
     set cscopeprg=cscope
@@ -196,9 +196,7 @@ colorscheme lucius
 
 if has("gui_running")
     set guioptions=ai
-    set guifont=Ubuntu\ Mono\ derivative\ Powerline\ 12
-    set lines=64
-    set columns=128
+    set guifont=Terminess\ Powerline\ 12
     set cursorline
 else
     let g:loaded_airline=1
