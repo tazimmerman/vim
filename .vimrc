@@ -48,8 +48,6 @@ filetype off
 call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'kien/ctrlp.vim'
-Plugin 'ivalkeen/vim-ctrlp-tjump'
-Plugin 'fisadev/vim-ctrlp-cmdpalette'
 Plugin 'scrooloose/syntastic'
 Plugin 'ervandew/supertab'
 Plugin 'SirVer/ultisnips'
@@ -60,27 +58,23 @@ Plugin 'hynek/vim-python-pep8-indent'
 Plugin 'bling/vim-airline'
 Plugin 'tomasr/molokai'
 Plugin 'jonathanfilip/vim-lucius'
-Plugin 'Keithbsmiley/investigate.vim'
 Plugin 'tpope/vim-abolish'
 Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-surround'
 Plugin 'terryma/vim-multiple-cursors'
+"Plugin 'ivalkeen/vim-ctrlp-tjump'
+"Plugin 'fisadev/vim-ctrlp-cmdpalette'
+"Plugin 'Keithbsmiley/investigate.vim'
 call vundle#end()
 " End Vundle plugin management
 
 let java_comment_strings=1
 let java_highlight_debug=1
-let java_highlight_functions="style"
+let java_highlight_functions='style'
 let java_allow_cpp_keywords=1
 
 let python_highlight_all=1
 let python_version_2=1
-
-let g:netrw_browse_split=3
-let g:netrw_browse_alto=1
-let g:netrw_browse_altv=1
-let g:netrw_liststyle=3
-let g:netrw_list_hide=".*.swp;*.o"
 
 let g:xml_syntax_folding=1
 
@@ -93,9 +87,6 @@ let g:ctrlp_root_markers=['cscope.out', 'tags']
 let g:ctrlp_extensions=['buffertag']
 let g:ctrlp_buftag_ctags_bin='/home/tzimmerm/tp/vim/7.4/bin/ctags'
 let g:ctrlp_by_filename=1
-
-let g:tagbar_ctags_bin='ctags'
-let g:tagbar_compact=1
 
 let g:UltiSnipsSnippetDirectories=["ultisnips"]
 
