@@ -1,2 +1,2 @@
 setlocal foldmethod=syntax
-setlocal equalprg=xmllint\ --format\ --recover\ -\ 2>/dev/null
+setlocal formatprg=xmllint\ --format\ --recover\ -\ 2>/dev/null

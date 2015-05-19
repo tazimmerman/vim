@@ -2,7 +2,7 @@ set nocompatible
 set backspace=start,indent,eol
 set wildmenu
 set wildmode=list:longest,full
-set wildignore=*/.git/*,*/.hg/*,*/.svn/*,*/tmp/*,*.pyc,*.pyo,*.so,*.o,*.dll,*.lib,*.pyd,*.obj,*.h5,*.ttf,*.pdf,*.xls,*.pcl,*.tar,*.gz,*.png,*.gif,*.jpg,*.dat
+set wildignore=*/.git/*,*/.hg/*,*/.svn/*,*/tmp/*,*.pyc,*.pyo,*.so,*.o,*.dll,*.lib,*.pyd,*.obj,*.h5,*.ttf,*.pdf,*.xls,*.pcl,*.tar,*.gz,*.png,*.gif,*.jpg,*.dat,tags
 set complete=.,w,b,u,t
 set completeopt=menu,preview
 set ignorecase
@@ -51,20 +51,19 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'ervandew/supertab'
 Plugin 'SirVer/ultisnips'
-Plugin 'bkad/CamelCaseMotion'
 Plugin 'vcscommand.vim'
 Plugin 'hdima/python-syntax'
 Plugin 'hynek/vim-python-pep8-indent'
 Plugin 'bling/vim-airline'
-Plugin 'tomasr/molokai'
-Plugin 'jonathanfilip/vim-lucius'
 Plugin 'tpope/vim-abolish'
 Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-surround'
+Plugin 'justinmk/vim-sneak'
 Plugin 'terryma/vim-multiple-cursors'
+Plugin 'chriskempson/base16-vim'
+Plugin 'tomasr/molokai'
 "Plugin 'ivalkeen/vim-ctrlp-tjump'
 "Plugin 'fisadev/vim-ctrlp-cmdpalette'
-"Plugin 'Keithbsmiley/investigate.vim'
 call vundle#end()
 " End Vundle plugin management
 
@@ -129,8 +128,8 @@ syntax sync fromstart
 command -nargs=0 DO :normal ]cdo<CR>
 
 " Popup navigation
-inoremap <silent> <Up> <C-R>=pumvisible() ? "\<lt>C-P>" : "\<lt>Up>"<CR>
-inoremap <silent> <Down> <C-R>=pumvisible() ? "\<lt>C-N>" : "\<lt>Down>"<CR>
+inoremap <silent> <C-K> <C-R>=pumvisible() ? "\<lt>C-P>" : "\<lt>C-K>"<CR>
+inoremap <silent> <C-J> <C-R>=pumvisible() ? "\<lt>C-N>" : "\<lt>C-J>"<CR>
 
 " Alias space to leader
 nmap <Space> <leader>
@@ -183,14 +182,12 @@ if has("cscope")
 endif
 
 set background=dark
-colorscheme lucius
+colorscheme base16-default
+set cursorline
 
 if has("gui_running")
     set guioptions=ai
-    set guifont=Terminess\ Powerline\ 12
-    set cursorline
-else
-    let g:loaded_airline=1
-    hi Normal ctermbg=none
-    set nocursorline
+    set guifont=Sauce\ Code\ Powerline:h16
+    set lines=32
+    set columns=128
 endif

@@ -1,4 +1,4 @@
-setlocal equalprg=astyle
+setlocal formatprg=astyle
 setlocal shiftwidth=4
 setlocal tabstop=4
 setlocal softtabstop=4
