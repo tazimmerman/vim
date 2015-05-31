@@ -3,4 +3,4 @@ setlocal tabstop=4
 setlocal softtabstop=4
 setlocal expandtab
 setlocal textwidth=79
-setlocal colorcolumn=+1,+21
+setlocal colorcolumn=+1
