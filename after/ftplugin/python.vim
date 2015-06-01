@@ -4,6 +4,7 @@ setlocal softtabstop=4
 setlocal expandtab
 setlocal textwidth=79
 setlocal colorcolumn=+1,+21
+setlocal keywordprg=pydoc
 "setlocal errorformat=%E%f:%l:%c:\ %t%n\ %m,%E%f:%l:%c:\ %m,%E%f:%l:\ %m
 "setlocal makeprg=pep8\ %
 
