@@ -11,4 +11,14 @@ setlocal keywordprg=pydoc
 let python_highlight_all=1
 let python_version_2=1
 
-iabbrev pdb import pdb<CR>pdb.set_trace()<Esc>
+" Wrap a Visual selection in a try/catch/pdb block.
+"
+"   V stops Visual mode
+"   '< goes to the beginning of the selection
+"   O inserts a line above the selection
+"   <Esc> stops Insert mode
+"   '> goes to the end of the selection
+"   o inserts a line below the selection
+"   <Esc> stops Insert mode
+"   gv> re-selects and indent the lines
+vnoremap <silent> <leader>b V'<Otry:<Esc>'>oexcept:<CR>import pdb<CR>pdb.set_trace()<Esc>gv>
