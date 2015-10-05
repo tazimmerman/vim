@@ -3,7 +3,6 @@ setlocal tabstop=4
 setlocal softtabstop=4
 setlocal expandtab
 setlocal textwidth=79
-setlocal colorcolumn=+1,+21
 setlocal keywordprg=pydoc
 "setlocal errorformat=%E%f:%l:%c:\ %t%n\ %m,%E%f:%l:%c:\ %m,%E%f:%l:\ %m
 "setlocal makeprg=pep8\ %
@@ -20,5 +19,11 @@ let python_version_2=1
 "   '> goes to the end of the selection
 "   o inserts a line below the selection
 "   <Esc> stops Insert mode
-"   gv> re-selects and indent the lines
-vnoremap <silent> <leader>b V'<Otry:<Esc>'>oexcept:<CR>import pdb<CR>pdb.set_trace()<Esc>gv>
+"   gv> re-selects lines and indents them
+"
+" Note this functionality relies on the language indent behavior, so it may not
+" always work as expected. For example, if a selection contains a single line
+" starting with 'return' (as you would find at the end of a function) the
+" 'except' clause will be missing one indent level.
+vnoremap <silent> <C-B> V'<Otry:<Esc>'>oexcept:<CR>import pdb<CR>pdb.set_trace()<Esc>gv>
+inoremap <silent> <C-B> import pdb<CR>pdb.set_trace()
