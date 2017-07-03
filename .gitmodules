@@ -58,3 +58,12 @@
 [submodule "pack/github/opt/vim-grepper"]
 	path = pack/github/opt/vim-grepper
 	url = https://github.com/mhinz/vim-grepper
+[submodule "pack/github/opt/Alduin"]
+	path = pack/github/opt/Alduin
+	url = https://github.com/AlessandroYorba/Alduin
+[submodule "pack/github/opt/Monrovia"]
+	path = pack/github/opt/Monrovia
+	url = https://github.com/AlessandroYorba/Monrovia
+[submodule "pack/github/opt/Sidonia"]
+	path = pack/github/opt/Sidonia
+	url = https://github.com/AlessandroYorba/Sidonia
