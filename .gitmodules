@@ -1,0 +1,60 @@
+[submodule "pack/github/opt/base16-vim"]
+	path = pack/github/opt/base16-vim
+	url = https://github.com/chriskempson/base16-vim
+[submodule "pack/github/opt/gruvbox"]
+	path = pack/github/opt/gruvbox
+	url = https://github.com/morhetz/gruvbox
+[submodule "pack/github/opt/probe"]
+	path = pack/github/opt/probe
+	url = https://github.com/torbiak/probe
+[submodule "pack/github/opt/python-syntax"]
+	path = pack/github/opt/python-syntax
+	url = https://github.com/hdima/python-syntax.git
+[submodule "pack/github/opt/targets.vim"]
+	path = pack/github/opt/targets.vim
+	url = https://git::@github.com/wellle/targets.vim
+[submodule "pack/github/opt/vim-commentary"]
+	path = pack/github/opt/vim-commentary
+	url = https://git::@github.com/tpope/vim-commentary
+[submodule "pack/github/opt/vim-gitgutter"]
+	path = pack/github/opt/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter
+[submodule "pack/github/opt/vim-python-pep8-indent"]
+	path = pack/github/opt/vim-python-pep8-indent
+	url = https://github.com/hynek/vim-python-pep8-indent
+[submodule "pack/github/opt/vim-repeat"]
+	path = pack/github/opt/vim-repeat
+	url = https://github.com/tpope/vim-repeat
+[submodule "pack/github/opt/vim-surround"]
+	path = pack/github/opt/vim-surround
+	url = https://github.com/tpope/vim-surround
+[submodule "pack/github/opt/vim-wordmotion"]
+	path = pack/github/opt/vim-wordmotion
+	url = https://git::@github.com/chaoren/vim-wordmotion.git
+[submodule "pack/github/opt/Despacio"]
+	path = pack/github/opt/Despacio
+	url = https://github.com/AlessandroYorba/Despacio
+[submodule "pack/github/opt/Sierra"]
+	path = pack/github/opt/Sierra
+	url = https://github.com/AlessandroYorba/Sierra
+[submodule "pack/github/opt/Arcadia"]
+	path = pack/github/opt/Arcadia
+	url = https://github.com/AlessandroYorba/Arcadia
+[submodule "pack/github/opt/ale"]
+	path = pack/github/opt/ale
+	url = https://github.com/w0rp/ale
+[submodule "pack/github/opt/vim-abolish"]
+	path = pack/github/opt/vim-abolish
+	url = https://github.com/tpope/vim-abolish
+[submodule "pack/github/opt/papercolor-theme"]
+	path = pack/github/opt/papercolor-theme
+	url = https://github.com/NLKNguyen/papercolor-theme
+[submodule "pack/github/opt/vim-airline"]
+	path = pack/github/opt/vim-airline
+	url = https://github.com/vim-airline/vim-airline
+[submodule "pack/github/opt/vim-airline-themes"]
+	path = pack/github/opt/vim-airline-themes
+	url = https://github.com/vim-airline/vim-airline-themes
+[submodule "pack/github/opt/vim-grepper"]
+	path = pack/github/opt/vim-grepper
+	url = https://github.com/mhinz/vim-grepper
