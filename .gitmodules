@@ -67,3 +67,6 @@
 [submodule "pack/github/opt/Sidonia"]
 	path = pack/github/opt/Sidonia
 	url = https://github.com/AlessandroYorba/Sidonia
+[submodule "pack/github/opt/vim-javascript"]
+	path = pack/github/opt/vim-javascript
+	url = https://github.com/pangloss/vim-javascript
