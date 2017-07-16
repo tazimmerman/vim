@@ -71,5 +71,5 @@
 	path = pack/github/opt/vim-javascript
 	url = https://github.com/pangloss/vim-javascript
 [submodule "pack/github/opt/vim-vue"]
-	path = pack/github/opt/vim-vue
+	path = pack/github/start/vim-vue
 	url = https://github.com/posva/vim-vue
