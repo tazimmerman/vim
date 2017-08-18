@@ -4,5 +4,3 @@ setlocal softtabstop=4
 setlocal expandtab
 setlocal textwidth=79
 setlocal keywordprg=pydoc
-nnoremap <silent> <buffer> [[ ?^class\|^\s*def<CR>
-nnoremap <silent> <buffer> ]] /^class\|^\s*def<CR>
