@@ -76,3 +76,6 @@
 [submodule "pack/github/opt/vim-lucius"]
 	path = pack/github/opt/vim-lucius
 	url = https://github.com/jonathanfilip/vim-lucius
+[submodule "pack/github/opt/falcon"]
+	path = pack/github/opt/falcon
+	url = https://github.com/fenetikm/falcon
