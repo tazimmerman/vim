@@ -79,3 +79,6 @@
 [submodule "pack/github/opt/falcon"]
 	path = pack/github/opt/falcon
 	url = https://github.com/fenetikm/falcon
+[submodule "pack/github/opt/tender.vim"]
+	path = pack/github/opt/tender.vim
+	url = https://github.com/jacoborus/tender.vim
