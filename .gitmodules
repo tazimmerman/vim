@@ -82,3 +82,6 @@
 [submodule "pack/github/opt/tender.vim"]
 	path = pack/github/opt/tender.vim
 	url = https://github.com/jacoborus/tender.vim
+[submodule "pack/github/opt/dmenu.vim"]
+	path = pack/github/opt/dmenu.vim
+	url = https://github.com/tazimmerman/dmenu.vim
