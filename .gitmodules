@@ -85,3 +85,6 @@
 [submodule "pack/github/opt/dmenu.vim"]
 	path = pack/github/opt/dmenu.vim
 	url = https://github.com/tazimmerman/dmenu.vim
+[submodule "pack/github/opt/badwolf"]
+	path = pack/github/opt/badwolf
+	url = https://github.com/sjl/badwolf
