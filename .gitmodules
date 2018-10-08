@@ -88,3 +88,6 @@
 [submodule "pack/github/opt/badwolf"]
 	path = pack/github/opt/badwolf
 	url = https://github.com/sjl/badwolf
+[submodule "pack/github/opt/tempus-themes-vim"]
+	path = pack/github/opt/tempus-themes-vim
+	url = https://gitlab.com/protesilaos/tempus-themes-vim.git
