@@ -91,3 +91,6 @@
 [submodule "pack/github/opt/tempus-themes-vim"]
 	path = pack/github/opt/tempus-themes-vim
 	url = https://gitlab.com/protesilaos/tempus-themes-vim.git
+[submodule "pack/github/opt/vim-sneak"]
+	path = pack/github/opt/vim-sneak
+	url = https://github.com/justinmk/vim-sneak
