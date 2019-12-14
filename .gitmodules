@@ -88,3 +88,6 @@
 [submodule "pack/github/opt/tempus-themes-vim"]
 	path = pack/github/opt/tempus-themes-vim
 	url = https://gitlab.com/protesilaos/tempus-themes-vim.git
+[submodule "pack/github/opt/fzf.vim"]
+	path = pack/github/opt/fzf.vim
+	url = https://github.com/junegunn/fzf.vim
