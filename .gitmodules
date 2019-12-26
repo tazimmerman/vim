@@ -25,15 +25,6 @@
 [submodule "pack/github/opt/vim-wordmotion"]
 	path = pack/github/opt/vim-wordmotion
 	url = https://git::@github.com/chaoren/vim-wordmotion.git
-[submodule "pack/github/opt/Despacio"]
-	path = pack/github/opt/Despacio
-	url = https://github.com/AlessandroYorba/Despacio
-[submodule "pack/github/opt/Sierra"]
-	path = pack/github/opt/Sierra
-	url = https://github.com/AlessandroYorba/Sierra
-[submodule "pack/github/opt/Arcadia"]
-	path = pack/github/opt/Arcadia
-	url = https://github.com/AlessandroYorba/Arcadia
 [submodule "pack/github/opt/ale"]
 	path = pack/github/opt/ale
 	url = https://github.com/w0rp/ale
@@ -52,33 +43,18 @@
 [submodule "pack/github/opt/vim-grepper"]
 	path = pack/github/opt/vim-grepper
 	url = https://github.com/mhinz/vim-grepper
-[submodule "pack/github/opt/Alduin"]
-	path = pack/github/opt/Alduin
-	url = https://github.com/AlessandroYorba/Alduin
-[submodule "pack/github/opt/Monrovia"]
-	path = pack/github/opt/Monrovia
-	url = https://github.com/AlessandroYorba/Monrovia
-[submodule "pack/github/opt/Sidonia"]
-	path = pack/github/opt/Sidonia
-	url = https://github.com/AlessandroYorba/Sidonia
 [submodule "pack/github/opt/vim-javascript"]
 	path = pack/github/opt/vim-javascript
 	url = https://github.com/pangloss/vim-javascript
 [submodule "pack/github/opt/vim-lucius"]
 	path = pack/github/opt/vim-lucius
 	url = https://github.com/jonathanfilip/vim-lucius
-[submodule "pack/github/opt/falcon"]
-	path = pack/github/opt/falcon
-	url = https://github.com/fenetikm/falcon
 [submodule "pack/github/opt/tender.vim"]
 	path = pack/github/opt/tender.vim
 	url = https://github.com/jacoborus/tender.vim
 [submodule "pack/github/opt/badwolf"]
 	path = pack/github/opt/badwolf
 	url = https://github.com/sjl/badwolf
-[submodule "pack/github/opt/tempus-themes-vim"]
-	path = pack/github/opt/tempus-themes-vim
-	url = https://gitlab.com/protesilaos/tempus-themes-vim.git
 [submodule "pack/github/opt/fzf.vim"]
 	path = pack/github/opt/fzf.vim
 	url = https://github.com/junegunn/fzf.vim
