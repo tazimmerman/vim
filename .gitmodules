@@ -1,9 +1,6 @@
 [submodule "pack/github/opt/gruvbox"]
 	path = pack/github/opt/gruvbox
 	url = https://github.com/morhetz/gruvbox
-[submodule "pack/github/opt/python-syntax"]
-	path = pack/github/opt/python-syntax
-	url = https://github.com/hdima/python-syntax.git
 [submodule "pack/github/opt/targets.vim"]
 	path = pack/github/opt/targets.vim
 	url = https://git::@github.com/wellle/targets.vim
@@ -55,3 +52,6 @@
 [submodule "pack/github/opt/fzf.vim"]
 	path = pack/github/opt/fzf.vim
 	url = https://github.com/junegunn/fzf.vim
+[submodule "pack/github/opt/python-syntax"]
+	path = pack/github/opt/python-syntax
+	url = https://github.com/vim-python/python-syntax
