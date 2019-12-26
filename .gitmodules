@@ -55,3 +55,6 @@
 [submodule "pack/github/opt/python-syntax"]
 	path = pack/github/opt/python-syntax
 	url = https://github.com/vim-python/python-syntax
+[submodule "pack/github/opt/quick-scope"]
+	path = pack/github/opt/quick-scope
+	url = https://github.com/unblevable/quick-scope
