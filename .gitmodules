@@ -58,3 +58,6 @@
 [submodule "pack/github/opt/quick-scope"]
 	path = pack/github/opt/quick-scope
 	url = https://github.com/unblevable/quick-scope
+[submodule "pack/github/opt/vim-cpp-modern"]
+	path = pack/github/opt/vim-cpp-modern
+	url = https://github.com/bfrg/vim-cpp-modern
