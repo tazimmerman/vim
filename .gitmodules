@@ -40,9 +40,6 @@
 [submodule "pack/github/opt/vim-grepper"]
 	path = pack/github/opt/vim-grepper
 	url = https://github.com/mhinz/vim-grepper
-[submodule "pack/github/opt/vim-javascript"]
-	path = pack/github/opt/vim-javascript
-	url = https://github.com/pangloss/vim-javascript
 [submodule "pack/github/opt/tender.vim"]
 	path = pack/github/opt/tender.vim
 	url = https://github.com/jacoborus/tender.vim
