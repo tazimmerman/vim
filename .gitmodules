@@ -58,3 +58,6 @@
 [submodule "pack/github/opt/vim-cpp-modern"]
 	path = pack/github/opt/vim-cpp-modern
 	url = https://github.com/bfrg/vim-cpp-modern
+[submodule "pack/github/opt/vim-cmake-syntax"]
+	path = pack/github/opt/vim-cmake-syntax
+	url = https://github.com/pboettch/vim-cmake-syntax
