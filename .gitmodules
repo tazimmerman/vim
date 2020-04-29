@@ -58,6 +58,3 @@
 [submodule "pack/github/opt/vim-cpp-modern"]
 	path = pack/github/opt/vim-cpp-modern
 	url = https://github.com/bfrg/vim-cpp-modern
-[submodule "pack/github/opt/vim-floaterm"]
-	path = pack/github/opt/vim-floaterm
-	url = https://github.com/voldikss/vim-floaterm
