@@ -61,3 +61,6 @@
 [submodule "pack/github/opt/vim-cmake-syntax"]
 	path = pack/github/opt/vim-cmake-syntax
 	url = https://github.com/pboettch/vim-cmake-syntax
+[submodule "pack/github/opt/vim-dadbod"]
+	path = pack/github/opt/vim-dadbod
+	url = https://github.com/tpope/vim-dadbod.git
