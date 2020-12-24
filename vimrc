@@ -175,6 +175,7 @@ packadd! fzf.vim
 packadd! targets.vim
 packadd! vim-abolish
 packadd! vim-commentary
+packadd! vim-dadbod
 packadd! vim-gitgutter
 packadd! vim-grepper
 packadd! vim-repeat
