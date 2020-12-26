@@ -297,7 +297,7 @@ nnoremap <silent> c; *``cgn
 nnoremap <silent> c, #``cgn
 
 " Reset search pattern
-nnoremap <silent> <ESC> :let @/=""<CR>
+nnoremap <silent> <C-L> <C-L>:let @/=""<CR>
 
 " ALE shortcuts
 nmap <silent> ]l <Plug>(ale_next)
