@@ -256,8 +256,10 @@ let g:gitgutter_preview_win_floating=1
 " }}}
 
 " FZF {{{
+let $FZF_DEFAULT_OPTS='--layout=reverse'
 let g:fzf_buffers_jump=1
 let g:fzf_tags_command='ctags -R --exclude=*/__pycache__/* --python-kinds=-i --sorted=yes'
+let g:fzf_layout={'window': {'height': 0.5, 'width': 0.5}}
 " }}}
 
 " Quick Scope {{{
@@ -395,7 +397,6 @@ command! -nargs=1 HttpStatus :call <SID>go_to_httpstatuses(<q-args>)
 
 " FZF {{{
 if has('nvim')
-    let $FZF_DEFAULT_OPTS='--layout=reverse'
     let g:fzf_layout={'window': 'call FloatingFZF()'}
 
     function! FloatingFZF()
