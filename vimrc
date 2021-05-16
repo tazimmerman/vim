@@ -119,7 +119,7 @@ if has('gui') && has('gui_running')
 
     if has('gui_macvim')
         set antialias
-        set guifont=Sauce\ Code\ Powerline:h16
+        set guifont=SauceCodeProNerdFontCompleteM-Regular:h14
         set transparency=10
     endif
 else
