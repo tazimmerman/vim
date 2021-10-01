@@ -4,3 +4,4 @@ setlocal softtabstop=4
 setlocal expandtab
 setlocal textwidth=79
 setlocal keywordprg=pydoc
+setlocal equalprg=black\ --quiet\ -
