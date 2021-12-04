@@ -240,6 +240,9 @@ let g:ale_lint_on_insert_leave=1
 let g:ale_set_highlights=0
 let g:ale_set_signs=0
 let g:ale_set_balloons=0
+let g:ale_fixers={
+    \ 'python': ['black', 'isort']
+    \ }
 let g:ale_linters={
     \ 'cpp': ['gcc'],
     \ 'python': ['flake8']
