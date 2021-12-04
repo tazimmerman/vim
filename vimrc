@@ -169,6 +169,10 @@ packadd! tender.vim
 packadd! vim-airline
 packadd! vim-airline-themes
 
+if has("nvim")
+    packadd! nvim-treesitter
+endif
+
 packadd! ale
 packadd! quick-scope
 packadd! fzf.vim

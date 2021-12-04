@@ -64,3 +64,6 @@
 [submodule "pack/github/opt/vim-dadbod"]
 	path = pack/github/opt/vim-dadbod
 	url = https://github.com/tpope/vim-dadbod.git
+[submodule "pack/github/opt/nvim-treesitter"]
+	path = pack/github/opt/nvim-treesitter
+	url = https://github.com/nvim-treesitter/nvim-treesitter.git
