@@ -67,3 +67,6 @@
 [submodule "pack/github/opt/nvim-treesitter"]
 	path = pack/github/opt/nvim-treesitter
 	url = https://github.com/nvim-treesitter/nvim-treesitter.git
+[submodule "pack/github/opt/vim-elixir"]
+	path = pack/github/opt/vim-elixir
+	url = https://github.com/elixir-editors/vim-elixir.git
