@@ -148,6 +148,11 @@ augroup QuickFix
     autocmd QuickFixCmdPost [^l]* nested cwindow
     autocmd QuickFixCmdPost    l* nested lwindow
 augroup end
+
+augroup ElixirLangs
+    au BufRead,BufNewFile *.ex,*.exs set filetype=elixir
+    au BufRead,BufNewFile *.eex set filetype=eelixir
+augroup end
 " }}}
 
 " Syntax, Filetype {{{
@@ -188,6 +193,7 @@ packadd! vim-wordmotion
 
 packadd! vim-cpp-modern
 packadd! vim-cmake-syntax
+packadd! vim-elixir
 packadd! python-syntax
 packadd! vim-python-pep8-indent
 " }}}
