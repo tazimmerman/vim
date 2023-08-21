@@ -68,6 +68,7 @@ endif
 set complete=.,w,b
 set completeopt=menu
 set pumheight=15
+set omnifunc=ale#completion#OmniFunc
 " }}}
 
 " Wild Ignore {{{
@@ -135,6 +136,11 @@ endif
 " }}}
 
 " Auto Commands {{{
+augroup ALE
+    autocmd!
+    autocmd CursorHold * ALEHover
+augroup end
+
 augroup CursorLine
     autocmd!
     autocmd WinEnter * set cursorline colorcolumn=+1
@@ -246,17 +252,19 @@ let g:ale_lint_on_insert_leave=1
 let g:ale_set_highlights=0
 let g:ale_set_signs=0
 let g:ale_set_balloons=0
-let g:ale_cursor_detail=1
-let g:ale_floating_preview=1
+let g:ale_hover_to_floating_preview=1
+let g:ale_floating_window_border=['│', '─', '╭', '╮', '╯', '╰', '│', '─']
 let g:ale_fixers={
-    \ 'python': ['black', 'isort']
+    \ 'go': ['gofmt'],
+    \ 'python': ['black', 'ruff']
     \ }
 let g:ale_linters={
     \ 'cpp': ['gcc'],
-    \ 'python': ['flake8']
+    \ 'go': ['gopls'],
+    \ 'python': ['ruff']
     \ }
 let g:ale_cpp_gcc_options='-std=c++14 -Wall -Wextra -Wpedantic -Wconversion'
-let g:ale_python_flake8_options='--ignore=E501,W291,E722' " line too long, trailing whitespace, bare except
+let g:ale_python_ruff_options='--ignore=E501,W291,E722' " line too long, trailing whitespace, bare except
 " }}}
 
 " Grepper {{{
@@ -314,7 +322,7 @@ nnoremap <silent> c; *``cgn
 nnoremap <silent> c, #``cgn
 
 " Reset search pattern
-nnoremap <silent> <C-L> <C-L>:let @/=""<CR>
+nnoremap <silent> <C-L> <C-L>:let @/="" <bar> :ALEReset<CR>
 
 " ALE shortcuts
 nmap <silent> ]l <Plug>(ale_next)
