@@ -10,7 +10,7 @@ set fillchars=
 set formatoptions=tcroqnlj
 set hidden
 set list
-set listchars=tab:\|\ ,extends:>,precedes:<
+set listchars=tab:\│\ ,space:·,multispace:·,lead:·trail:·,extends:▸,precedes:◂
 set makeprg=make
 set noswapfile
 set nowrap
@@ -108,6 +108,7 @@ set display=lastline
 set laststatus=2
 set linebreak
 set ruler
+set mouse=n
 set mousehide
 set showbreak=\ \ >\  
 set splitbelow
@@ -200,6 +201,7 @@ packadd! vim-wordmotion
 packadd! vim-cpp-modern
 packadd! vim-cmake-syntax
 packadd! vim-elixir
+packadd! vim-go-syntax.git
 packadd! python-syntax
 packadd! vim-python-pep8-indent
 " }}}
@@ -240,6 +242,7 @@ let g:airline_theme=has('gui_running') ? 'badwolf' : 'gruvbox'
 let g:airline#extensions#wordcount#enabled=0
 let g:airline#extensions#whitespace#enabled=0
 let g:airline#extensions#tabline#enabled=1
+let g:airline_powerline_fonts=1
 " }}}
 
 " Word Motion {{{
@@ -254,16 +257,24 @@ let g:ale_set_signs=0
 let g:ale_set_balloons=0
 let g:ale_hover_to_floating_preview=1
 let g:ale_floating_window_border=['│', '─', '╭', '╮', '╯', '╰', '│', '─']
+let g:ale_floating_preview_popup_opts={'close': 'click'}
 let g:ale_fixers={
-    \ 'go': ['gofmt'],
+    \ 'go': ['goimports', 'gopls'],
     \ 'python': ['black', 'ruff']
     \ }
 let g:ale_linters={
     \ 'cpp': ['gcc'],
-    \ 'go': ['gopls'],
-    \ 'python': ['ruff']
+    \ 'go': ['golangci-lint', 'gopls'],
+    \ 'python': ['pyright', 'ruff']
     \ }
+let g:ale_go_golangci_lint_executable='~/go/bin/golangci-lint'
+let g:ale_go_golangci_lint_package=1
+let g:ale_go_goimports_executable='~/go/bin/goimports'
+let g:ale_go_gopls_executable='~/go/bin/gopls'
 let g:ale_cpp_gcc_options='-std=c++14 -Wall -Wextra -Wpedantic -Wconversion'
+let g:ale_python_pyright_config={
+    \ 'pyright': { 'disableLanguageServices': v:true }
+    \ }
 let g:ale_python_ruff_options='--ignore=E501,W291,E722' " line too long, trailing whitespace, bare except
 " }}}
 
@@ -322,7 +333,7 @@ nnoremap <silent> c; *``cgn
 nnoremap <silent> c, #``cgn
 
 " Reset search pattern
-nnoremap <silent> <C-L> <C-L>:let @/="" <bar> :ALEReset<CR>
+nnoremap <silent> <C-L> <C-L>:let @/="" <bar> :ALELint<CR>
 
 " ALE shortcuts
 nmap <silent> ]l <Plug>(ale_next)
