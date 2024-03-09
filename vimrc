@@ -10,7 +10,7 @@ set fillchars=
 set formatoptions=tcroqnlj
 set hidden
 set list
-set listchars=tab:\│\ ,space:·,multispace:·,lead:·trail:·,extends:▸,precedes:◂
+set listchars=tab:\│\ ,space:·,multispace:·,lead:·,trail:·,extends:▸,precedes:◂
 set makeprg=make
 set noswapfile
 set nowrap
