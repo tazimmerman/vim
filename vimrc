@@ -339,6 +339,8 @@ nnoremap <silent> <C-L> <C-L>:let @/="" <bar> :ALELint<CR>
 nmap <silent> ]l <Plug>(ale_next)
 nmap <silent> [l <Plug>(ale_previous)
 nmap <silent> <leader>l <Plug>(ale_lint)
+nmap <silent> g] <Plug>(ale_go_to_definition)
+nmap <silent> g^ <Plug>(ale_find_references)
 
 " Grepper shortcuts
 nmap <silent> gs <Plug>(GrepperOperator)
